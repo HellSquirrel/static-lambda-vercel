@@ -1,7 +1,7 @@
-const fetch = async () => {
+const fetchReq = async () => {
     const response = await fetch('/api/test')
     const data = await response.text()
     console.log(data)
 }
 
-fetch()
+fetchReq()

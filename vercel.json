@@ -3,6 +3,7 @@
     "builds": [
         { "src": "/api/*.js", "use": "@vercel/node" }
     ],
+    "public": true,
     "routes": [
         { "src": "/api/(.*)", "dest": "/api/$1.js" },
         { "src": "/(.*)", "dest": "/client/$1" }
